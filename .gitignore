@@ -1,0 +1,53 @@
+# Ignore build and publish output
+bin/
+obj/
+out/
+
+# Ignore Rider IDE settings
+.idea/
+*.sln.iml
+*.user
+*.suo
+*.dotCover
+*.ncrunchproject
+*.nupkg
+*.psess
+*.vsp
+*.vspx
+*.vs/
+
+# Ignore compiled DLLs and executables
+*.exe
+*.dll
+*.pdb
+*.cache
+
+# Ignore dependency folders
+node_modules/
+packages/
+
+# Ignore logs and temporary files
+*.log
+*.bak
+*.swp
+*.tmp
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore user secrets
+secrets.json
+*.secrets.json
+
+# Ignore environment variables
+.env
+*.env.local
+
+# Ignore test results
+TestResults/
+coverage/
+coverage.xml
+
+# Ignore generated files
+*.Generated.cs
+Generated/
