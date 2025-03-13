@@ -1,12 +1,17 @@
+using Pokedex.Core.Services;
+using Pokedex.Core.Services.Interfaces;
 using Pokedex.Infrastructure.Brokers;
-using Pokedex.Infrastructure.Brokers.Interface;
+using Pokedex.Infrastructure.Brokers.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+//Brokers
 builder.Services.AddHttpClient<IPokemonApiBroker, PokemonApiBroker>();
+
+//Services
+builder.Services.AddScoped<IPokemonService, PokemonService>();
 
 var app = builder.Build();
 

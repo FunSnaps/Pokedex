@@ -1,6 +1,6 @@
 ﻿using Pokedex.Models.Entities;
 
-namespace Pokedex.Infrastructure.Brokers.Interface;
+namespace Pokedex.Infrastructure.Brokers.Interfaces;
 
 public interface IPokemonApiBroker
 {

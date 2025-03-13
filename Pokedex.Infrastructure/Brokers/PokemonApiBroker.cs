@@ -1,5 +1,5 @@
 ﻿using System.Text.Json;
-using Pokedex.Infrastructure.Brokers.Interface;
+using Pokedex.Infrastructure.Brokers.Interfaces;
 using Pokedex.Models.Entities;
 
 namespace Pokedex.Infrastructure.Brokers;
